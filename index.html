@@ -233,6 +233,101 @@
             
               
                 
+                <a class="post-title-link" href="/2016/06/30/cmake/" itemprop="url">
+                  cmake
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-30T12:38:16+08:00" content="2016-06-30">
+              2016-06-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>CMake是一个跨平台的安装(编译)工具,可以用简单的语句来描述所有平台的安装(编译过程)。他能够输出各种各样的makefile或者project文件,能测试编译器所支持的C++特性,类似UNIX下的automake。</p>
+<p>cmake就像之前linux用过的makefile，在CMakeLists.txt文件中指定工程名，头文件目录，原文件，环境变量等，使用cmake的gui或者cmd即可将指定ide的project文件输出到指定目录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">project(helloworld)</span><br><span class="line">cmake_minimum_required(VERSION 2.8.12)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">include(&quot;../../../..&quot;)</span><br><span class="line">set(CMAKE_VERBOSE_MAKEFILE FALSE)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">add_subdirectory(&quot;../..&quot; &quot;...&quot;)</span><br><span class="line"></span><br><span class="line">file(GLOB_RECURSE sources src/*.cpp)</span><br><span class="line">file(GLOB_RECURSE headers src/*.h)</span><br><span class="line">add_executable($&#123;PROJECT_NAME&#125; $&#123;headers&#125; $&#123;sources&#125;)</span><br><span class="line"></span><br><span class="line">target_link_libraries($&#123;PROJECT_NAME&#125; helloworld)</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/14/GRE阅读方法小结/" itemprop="url">
                   GRE阅读方法小结
                 </a>
@@ -663,7 +758,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
