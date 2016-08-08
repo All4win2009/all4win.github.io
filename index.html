@@ -233,6 +233,106 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/28/git/" itemprop="url">
+                  git使用小结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-28T17:11:22+08:00" content="2016-07-28">
+              2016-07-28
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="什么是git"><a href="#什么是git" class="headerlink" title="什么是git"></a>什么是git</h3><p> Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+<h3 id="为什么要用git"><a href="#为什么要用git" class="headerlink" title="为什么要用git"></a>为什么要用git</h3><p> 在实际开发中，经常需要对代码进行迭代，版本控制如果靠一份一份复制命名v1 v2是很让人伤神的。同时，如果有多个开发者，如何对代码进行合并也是非常重要的。因此熟练的使用git是程序员的自我修养。</p>
+<h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><p> Linux和MacOS下，使用包管理工具进行安装即可。Windows下去网站下载即可，用git bash像Unix的Terminal中那样使用git。</p>
+<p> 安装完成后记得设置你的身份：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your Name&quot;</span><br><span class="line">$ git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure></p>
+<h3 id="如何使用git"><a href="#如何使用git" class="headerlink" title="如何使用git"></a>如何使用git</h3><p> 本地使用git的话，在新建的文件夹目录中执行 git init，便会初始化该仓库。添加文件使用 git add filename。注意添加完后要执行 git commit 来完成这次对仓库的修改，此时要加 -m “”附带提交说明，提交说明用来帮助说明这次修改的原因。</p>
+<p> 使用 git status 查看仓库状态，git show 查看上次commit的具体内容。git当然还支持版本回退的功能，使用git reset即可，这里具体不做说明。</p>
+<h2 id="使用远程仓库"><a href="#使用远程仓库" class="headerlink" title="使用远程仓库"></a>使用远程仓库</h2><p> 远程仓库常见的有github，gitlab等。功能大同小异，任君选择。<br> 将用户主目录下的SSH key 添加到github的SSH keys内，就可以无需输入密码地使用.git结尾的链接来clone，push等一系列操作了。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/06/30/cmake/" itemprop="url">
                   cmake
                 </a>
@@ -758,7 +858,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -768,7 +868,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
