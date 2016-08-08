@@ -278,12 +278,14 @@
         
           
             <h3 id="什么是git"><a href="#什么是git" class="headerlink" title="什么是git"></a>什么是git</h3><p> Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
-<h3 id="为什么要用git"><a href="#为什么要用git" class="headerlink" title="为什么要用git"></a>为什么要用git</h3><p> 在实际开发中，经常需要对代码进行迭代，版本控制如果靠一份一份复制命名v1 v2是很让人伤神的。同时，如果有多个开发者，如何对代码进行合并也是非常重要的。因此熟练的使用git是程序员的自我修养。</p>
-<h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><p> Linux和MacOS下，使用包管理工具进行安装即可。Windows下去网站下载即可，用git bash像Unix的Terminal中那样使用git。</p>
+<h3 id="为什么要用git"><a href="#为什么要用git" class="headerlink" title="为什么要用git"></a>为什么要用git</h3><p> 在实际开发中，经常需要对代码进行迭代，版本控制如果靠一份一份复制命名v1、v2是很让人伤神的。同时，如果有多个开发者，如何对代码进行合并也是非常重要的。因此熟练的使用git是程序员的自我修养。</p>
+<h3 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h3><p> Linux和MacOS下，使用包管理工具进行安装即可。Windows下去网站下载即可，用git bash像Unix的Terminal中那样使用git</p>
 <p> 安装完成后记得设置你的身份：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;Your Name&quot;</span><br><span class="line">$ git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure></p>
-<h3 id="如何使用git"><a href="#如何使用git" class="headerlink" title="如何使用git"></a>如何使用git</h3><p> 本地使用git的话，在新建的文件夹目录中执行 git init，便会初始化该仓库。添加文件使用 git add filename。注意添加完后要执行 git commit 来完成这次对仓库的修改，此时要加 -m “”附带提交说明，提交说明用来帮助说明这次修改的原因。</p>
-<p> 使用 git status 查看仓库状态，git show 查看上次commit的具体内容。git当然还支持版本回退的功能，使用git reset即可，这里具体不做说明。</p>
-<h2 id="使用远程仓库"><a href="#使用远程仓库" class="headerlink" title="使用远程仓库"></a>使用远程仓库</h2><p> 远程仓库常见的有github，gitlab等。功能大同小异，任君选择。<br> 将用户主目录下的SSH key 添加到github的SSH keys内，就可以无需输入密码地使用.git结尾的链接来clone，push等一系列操作了。</p>
+<h3 id="如何使用git"><a href="#如何使用git" class="headerlink" title="如何使用git"></a>如何使用git</h3><p> 本地使用git的话，在新建的文件夹目录中执行 git init，便会初始化该仓库。添加文件使用 git add filename。注意添加完后要执行 git commit 来完成这次对仓库的修改，此时要加 -m “”附带提交说明，提交说明用来帮助说明这次修改的原因</p>
+<p> 使用 git status 查看仓库状态，git show 查看上次commit的具体内容。git当然还支持版本回退的功能，使用git reset即可，这里具体不做说明</p>
+<h2 id="使用远程仓库"><a href="#使用远程仓库" class="headerlink" title="使用远程仓库"></a>使用远程仓库</h2><p> 远程仓库常见的有github，gitlab等<br> 将用户主目录下的SSH key 添加到github的SSH keys内，就可以无需输入密码地使用.git结尾的链接来clone，push等一系列操作了</p>
+<h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><p> git branch develop 来新建develop分支<br> git checkout develop 来切换到develop分支<br> git push origin develop 来将develop推送到远程仓库都develop分支</p>
+<h2 id="subtree"><a href="#subtree" class="headerlink" title="subtree"></a>subtree</h2><p> subtree用于当你需要别的项目作为你的依赖时，创建一个subtree指针指向该项目，可以方便都获取subtree的新的commit<br> git subtree add –prefix=subtree/project git@xxxxx.git tag –squash 用于添加subtree，可以指定文件路径，tag，使用–squash来抛弃掉具体的commit信息<br> git subtree pull 可以获取更新</p>
 
           
         
